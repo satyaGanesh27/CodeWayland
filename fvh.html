@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECYCLE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#bgimg {
+  background-image: url(https://wallpaperaccess.com/full/729538.jpg);
+  width: 100%;
+  height: 1, 086px;
+  color: white;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#nav {
+  background-color: transparent;
+  height: 102px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#nav-img {
+  background-color: transparent;
+  height: 90px;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+#nav-img img {
+  width: 110px;
+  height: 90px;
+
+}
+
+#nav-options {
+  background-color: transparent;
+  height: 90px;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 90px;
+}
+
+ul {
+  display: inline-block;
+
+}
+
+li {
+  list-style-type: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.3em;
+  float: left;
+  padding: 0px 25px;
+
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+
+}
+
+li a:hover {
+  color: cyan;
+}
+
+#nav-more {
+  background-color: transparent;
+  height: 90px;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  line-height: 80px;
+  font-size: 2em;
+  float: right;
+  right: 0;
+}
+
+#nav-more button {
+  height: 40px;
+  background-color: rgb(34, 35, 34);
+  width: 140px;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 5px 25px;
+  margin-left: 5px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav-more button:hover {
+  background-color: lightslategray;
+  cursor: pointer;
+}
+
+
+#body {
+  background-color: transparent;
+  height: 984px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+#body1,
+#body2 {
+  height: 600px;
+  width: 700px;
+  margin: 10px;
+  font-size: 2em;
+  background-color: transparent;
+}
+
+/* about us  */
+#about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 650px;
+  color: white;
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("https://i.pinimg.com/736x/30/8f/2f/308f2fd627c36e007527bc50337f6c7b.jpg");
+  background-color: lightblue;
+}
+
+#about-div1,
+#about-div2 {
+  height: 490;
+  width: 45%;
+  background-color: transparent;
+
+  margin: 5px;
+}
+
+#about-div1 {
+  color: rgb(165, 165, 165);
+  font-size: 30px;
+}
+
+/* footer  */
+
+#foot {
+  background-color: black;
+  height: 450px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+#footdivs1-long {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(235, 232, 232);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+#m-footdivs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#footdivs1-long #footdivs1-in {
+  height: 90px;
+  width: 490px;
+  background-color: rgb(235, 232, 232);
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#secureicon,
+#securematter {
+  width: 200px;
+}
+
+#m-secureicon {
+  font-size: 60px;
+}
+
+#foot #footdivs {
+  height: 290px;
+  width: 290px;
+  margin: 5px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(55, 61, 55);
+}
+
+#securematter {
+  float: left;
+}
+
+#icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1.9em;
+  color: cyan;
+
+
+}
+
+#ico {
+  color: rgb(35, 200, 222);
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+#icons,
+h3 {
+  height: 50%;
+  width: 100%;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 190%;
+}
+
+#ico:hover {
+  color: rgb(238, 252, 252);
+}
+
+mY-footdivs
+
+/* This is dialog section  */
+dialog {
+  height: 400px;
+  width: 400px;
+  background-color: white;
+}
+
+
+
+
+@media screen and (max-width:350px) {
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  #bgimg {
+    background-image: url(https://wallpaperaccess.com/full/729538.jpg);
+    width: 100%;
+    height: 1, 086px;
+    color: white;
+
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #nav {
+    background-color: transparent;
+    height: 102px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  #nav-img {
+    background-color: transparent;
+    height: 90px;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  #nav-img img {
+    width: 100px;
+    height: 90px;
+
+  }
+
+  #nav-options {
+    display: none;
+    background-color: transparent;
+    height: 90px;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 90px;
+  }
+
+  ul {
+    display: inline-block;
+
+
+  }
+
+  li {
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+    float: left;
+    padding: 0px 25px;
+
+  }
+
+  li a {
+    text-decoration: none;
+    color: white;
+
+  }
+
+  li a:hover {
+    color: cyan;
+  }
+
+  #nav-more {
+    background-color: transparent;
+    height: 90px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    line-height: 80px;
+    font-size: 2em;
+    float: right;
+    right: 0;
+  }
+
+  #nav-more button {
+    height: 30px;
+    background-color: rgb(34, 35, 34);
+    width: 70px;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 5px 25px;
+    margin-left: 5px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #nav-more button:hover {
+    background-color: lightslategray;
+    cursor: pointer;
+  }
+
+
+  #body {
+    background-color: transparent;
+    height: 410px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+
+  }
+
+  #body1,
+  #body2 {
+    height: 270px;
+    width: 350px;
+    margin: 10px;
+    font-size: 1em;
+    background-color: transparent;
+  }
+
+  /* about us  */
+  #about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 250px;
+    color: white;
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("https://i.pinimg.com/736x/30/8f/2f/308f2fd627c36e007527bc50337f6c7b.jpg");
+    background-color: lightblue;
+  }
+
+  #about-div1,
+  #about-div2 {
+    height: 245px;
+    width: 45%;
+    background-color: transparent;
+
+    margin: 5px;
+  }
+
+  #about-div1 {
+    color: rgb(165, 165, 165);
+    font-size: 15px;
+  }
+
+  /* long 3box divs  */
+  #footdivs1-long #footdivs1-in {
+    height: 45px;
+    width: 90px;
+    background-color: rgb(235, 232, 232);
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #secureicon,
+  #securematter {
+    width: 20px;
+    margin: 5px;
+
+  }
+
+  #securematter {
+    float: right;
+    font-size: 8px;
+  }
+
+  #m-secureicon {
+    font-size: 25px;
+  }
+
+  #foot {
+    background-color: black;
+    height: 490px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  #footdivs1-long {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(235, 232, 232);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
+  #foot #footdivs {
+    margin: 5px;
+
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(55, 61, 55);
+  }
+
+  #m-footdivs {
+    display: none;
+    flex-direction: column;
+
+  }
+
+  .footdivs1{
+    height: 300px;
+    width: 200px;
+  }
+  dialog {
+    height: 400px;
+    width: 400px;
+    background-color: white;
+  }
+  .mY-footdivs{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+  }
+  #addr,#soc,#dis{
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin: 90px;
+  }
+  .ics i{
+    margin: 20px;
+
+  }
+  #ic{
+    font-size: 500px;
+  }
+} 
+
+    </style>
+</head>
+
+<body>
+    <!-- login dialog  -->
+    <dialog id="login-dialog">
+        <button onclick="login-dialog.close()">close</button>
+    </dialog>
+    <!-- signin dialog  -->
+    <dialog id="signin-dialog">
+        <button onclick="signin-dialog.close()">close</button>
+
+    </dialog>
+
+    <div class="container" id="blur">
+        <div id="bgimg"> <!--for bgimage tag -->
+            <div id="nav">
+                <div id="nav-img">
+                </div>
+                <div id="nav-options">
+                    <ul>
+                        <li><a href="">Home</a> </li>
+                        <li><a href="">About</a> </li>
+                        <li><a href="">Plans</a> </li>
+                        <li><a href="">Support</a> </li>
+                        <li><a href="">Role</a> </li>
+                    </ul>
+                </div>
+                <div id="nav-more"><button onclick="login-dialog.showModal()">Login</button>
+                    <button onclick="signin-dialog.showModal()">Sign in</button>
+                </div>
+            </div>
+            <div id="body">
+                <div id="body1">
+                    <h1 style="color: white">Recycle</h1>Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Autem dignissimos animi commodi amet, numquam voluptatem error cumque labore veniam vitae
+                    earum reprehenderit nesciunt doloribus sed sapiente repellat inventore, quo illum ex eos, omnis
+                    optio. Similique earum illum possimus eum itaque quasi dolorum, sequi commodi consequatur impedit
+                    laboriosam doloremque debitis sint.
+                </div>
+                <div id="body2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae rem beatae
+                    quis? Quasi reprehenderit maiores aperiam labore fugiat, doloribus quo est excepturi repudiandae?
+                    Dolorem voluptatem beatae nam rem quasi similique repellat dolorum quaerat in consequuntur iste
+                    illo, incidunt recusandae modi quia aliquam impedit amet sit repellendus. Nulla, fuga asperiores.
+                </div>
+
+            </div>
+        </div>
+  
+        <div id="about">
+
+            <div id="about-div1">
+                <h1><u> About US</u></h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis quisquam
+                repellat quae aliquid tenetur exercitationem obcaecati, ea eius quam perspiciatis alias aliquam odio,
+                iste repudiandae enim nisi modi consectetur.
+            </div>
+            <div id="about-div2"></div>
+        </div>
+        <div id="foot" style="color: white;">
+            <!-- long white div  -->
+            <div id="footdivs1-long">
+                <div id="footdivs1-in">
+                    <div id="secureicon">
+                        <i class="fa-solid fa-shield-halved" id="m-secureicon" style="color: #171bfb;"></i>
+                    </div>
+                    <div id="securematter" style="color: black;">
+                        100% SECURE <br>CHECK OUT
+                    </div>
+                </div>
+                <div id="footdivs1-in">
+                    <div id="secureicon">
+                        <i class="fa-solid fa-bucket" id="m-secureicon" style="color: #f61247;"></i>
+                    </div>
+                    <div id="securematter" style="color: black;">
+                        SHIPPING TO <br>Near Areas
+                    </div>
+                </div>
+                <div id="footdivs1-in">
+                    <div id="secureicon">
+                        <i class="fa-solid fa-people-line" id="m-secureicon" style="color: #04d56d;"></i>
+                    </div>
+                    <div id="securematter" style="color: black;">
+                        OUTSTANDING <br>Support
+                    </div>
+                </div>
+            </div>
+
+            <div id="m-footdivs">
+               
+                    <h3 style="font-size: 30px;">Find us in Social Media</h3>
+                    <div id="icons">
+                        <a href=""><i class="fa-brands fa-square-facebook" id="ico"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter" id="ico"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram" id="ico"></i></a>
+                        <a href=""><i class="fa-brands fa-google" id="ico"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin" id="ico"></i></a>
+                        <a href=""><i class="fa-solid fa-phone" id="ico"></i></a>
+                    </div>
+                </div>
+            </div>
+
+           
+
+                <div id="soc">
+                    <br><br>
+                    <div class="ics">
+                      <h3>Join Our Social Community</h3>
+                        <i id="ic" class="fa-brands fa-linkedin"></i>
+                        <i id="ic" class="fa-brands fa-square-facebook"></i>
+                        <i id="ic" class="fa-brands fa-square-instagram"></i>
+                        <i id="ic" class="fa-brands fa-square-twitter"></i>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="fvh.js"></script>
+</body>
+
+</html>
